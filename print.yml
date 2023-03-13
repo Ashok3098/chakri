@@ -1,0 +1,9 @@
+---
+- name: print morph
+  hosts: all
+  gather_facts: yes
+  become: yes
+  tasks:
+  - name: Print Morpheus
+    Shell: echo "{{ Morpheus }}"
+            
